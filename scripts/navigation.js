@@ -1,11 +1,13 @@
-/* Store the selected elements that we are going to use */
-const navbuttom = document.querySelector('#ham-btn');
-const navlinks = document.querySelector('#nav-bar');
+// Toggle hamburger menu
+const navButton = document.querySelector("#ham-btn");
+const navLinks = document.querySelector("#nav-bar");
 
-//Toggle the show class off and on
-navbuttom.addEventListener('click', () => {
-    navbuttom.classList.toggle('show');
-    navlinks.classList.toggle('show');
-});
+if (navButton && navLinks) {
+  navButton.addEventListener("click", () => {
+    navButton.classList.toggle("show");
+    navLinks.classList.toggle("show");
 
-/* navigation bar */
+    const expanded = navButton.getAttribute("aria-expanded") === "true";
+    navButton.setAttribute("aria-expanded", !expanded);
+  });
+}

@@ -1,44 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD - 231</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Octavio Daniel Almeida Ramirez" />
-  <meta
-    name="description"
-    content="WDD 131 - Dynamic Web Fundamentals. This is a website created by Octavio Daniel Almeida Ramirez. To reforce the JavaScript, CSS, HTML principles"
-  />
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="styles/larger.css">
+  <meta name="description" content="WDD231 - Course Home Page by Octavio Daniel Almeida Ramirez. Frontend Development Projects, Dynamic Content and Responsive Design." />
+  <title>WDD231 - Course Home</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+
+  <!-- JavaScript Files -->
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
 </head>
 <body>
   <header>
-    <img src="images/house-fill.svg" alt="Site logo" width="512" height="512">
-    <span>Daniel's Site Title</span>
-    <button id="ham-btn" class="hamburger"></button>
+    <img src="images/house-fill.svg" alt="Site Logo" width="48" height="48">
+    <span>Career Path</span>
+    <button id="ham-btn" class="hamburger" aria-label="Toggle navigation" aria-expanded="false"></button>
   </header>
+
   <nav id="nav-bar" class="navigation">
     <ul>
-      <li><a href="#">News & Events</a></li>
-      <li class="current"><a href="#">Dedicated Temples</a></li>
-      <li><a href="#">Announced Temples</a></li>
+      <li class="current"><a href="#">Home</a></li>
+      <li><a href="#">Chamber Project</a></li>
+      <li><a href="#">Final Project</a></li>
     </ul>
   </nav>
+
   <main>
-    <h1>Dedicated Temples</h1>
+    <h1>Home</h1>
+
+    <section>
+      <h2>Welcome</h2>
+      <p>This page demonstrates HTML, CSS, and JavaScript fundamentals for WDD231.</p>
+    </section>
+
+    <section>
+      <h2>Certificate Courses</h2>
+      <div class="course-controls">
+        <button id="all-btn">All Courses</button>
+        <button id="wdd-btn">WDD Courses</button>
+        <button id="cse-btn">CSE Courses</button>
+      </div>
+      <div id="course-list"></div>
+      <p>Total Credits: <span id="credit-total"></span></p>
+    </section>
+
+    <section>
+      <h2>About This Site</h2>
+      <p>Created as part of the BYUI WDD231 course. This site is responsive, accessible, and optimized.</p>
+    </section>
   </main>
+
   <footer>
     <div class="social">
-      <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg" alt="Instagram" width="16" height="16"></a>
-      <a href="https://mx.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin" width="16" height="16"></a>
-      <a href="https://x.com/OctavioAlm2318" target="_blank"><img src="images/twitter-x.svg" alt="Twitter-x" width="16" height="16"></a>
-      <a href="https://github.com/" target="_blank"><img src="images/github.svg" alt="GitHub" width="16" height="16"></a>
+      <a href="https://github.com/" target="_blank"><img src="images/github.svg" alt="GitHub"></a>
+      <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+      <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg" alt="Instagram"></a>
+      <a href="https://x.com/OctavioAlm2318" target="_blank"><img src="images/twitter-x.svg" alt="Instagram"></a>
     </div>
-    <p>copyright symbol and current year</p>
-    <p>Last Modified</p>
+    <p>&copy; <span id="year"></span> Octavio Daniel Almeida Ramirez | Mexico</p>
+    <p id="lastModified"></p>
   </footer>
-  <script src="scripts/navigation.js"></script>
 </body>
 </html>
