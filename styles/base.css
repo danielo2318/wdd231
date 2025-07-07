@@ -10,17 +10,18 @@ body {
 
 header {
   display: grid;
-  grid-template-columns: 24px auto 44px;
+  grid-template-columns: 28px auto 44px;
   padding: 0.5rem 1rem;
   align-items: center;
   border-bottom: 1px solid #ddd;
   background-color: #f9f9f9;
-  gap: .5rem;
+  gap: 8px;
 }
 
 header img {
   width: 100%;
   height: auto;
+  padding-bottom: 6px;
 }
 
 header span {
@@ -38,11 +39,11 @@ header span {
 }
 
 .hamburger::before {
-  content: "\2630"; 
+  content: "\2630";
 }
 
 .hamburger.show::before {
-  content: "\00D7"; 
+  content: "\00D7";
 }
 
 .navigation {
@@ -84,10 +85,19 @@ h1, h2 {
   color: #3D405B;
 }
 
+section img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 8px;
+}
+
 .course-controls {
   margin: 1rem 0;
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 button {
@@ -130,7 +140,7 @@ footer {
 .social {
   display: flex;
   justify-content: center;
-  gap: 8px;
+  gap: 1rem;
   margin-bottom: 0.5rem;
 }
 
@@ -142,7 +152,7 @@ footer {
   height: 44px;
   border-radius: 50%;
   border: 1px solid #ccc;
-  
+  transition: background-color 0.3s;
 }
 
 .social a:hover {
@@ -153,4 +163,3 @@ footer {
   width: 24px;
   height: 24px;
 }
-

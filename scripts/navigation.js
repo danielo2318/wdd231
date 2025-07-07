@@ -1,13 +1,8 @@
-// Toggle hamburger menu
-const navButton = document.querySelector("#ham-btn");
-const navLinks = document.querySelector("#nav-bar");
+const navbuttom = document.querySelector("#ham-btn");
+const navlinks = document.querySelector("#nav-bar");
 
-if (navButton && navLinks) {
-  navButton.addEventListener("click", () => {
-    navButton.classList.toggle("show");
-    navLinks.classList.toggle("show");
-
-    const expanded = navButton.getAttribute("aria-expanded") === "true";
-    navButton.setAttribute("aria-expanded", !expanded);
-  });
-}
+//Toggle the show class off and on
+navbuttom.addEventListener("click", () => {
+  navbuttom.classList.toggle("show");
+  navlinks.classList.toggle("show");
+});
