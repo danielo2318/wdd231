@@ -1,0 +1,22 @@
+{"family_name": "Almeida",
+"mi_date": "9-7-25",
+"number_of_members": 3,
+"visited_by_bishopric": false,
+"family_members":[
+  {
+    "name": "Daniel Almeida Ramirez",
+    "gender": "male",
+    "birthdate": "1-24-2002"
+  },
+  {
+    "name": "Andrea Almeida Hernandez",
+    "gender": "female",
+    "birthdate": "10-1-2000"
+  },
+  {
+    "name": "Karina Almeida Rosas",
+    "gender": "female",
+    "birthdate": "4-21-2002"
+  }
+]
+}

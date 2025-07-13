@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>León Chamber of Commerce - Directory</title>
+  <meta name="description" content="Explore local businesses in Timbuktu through our Chamber of Commerce Directory." />
+  <meta name="author" content="Daniel Almeida" />
+
+  <!-- Facebook Open Graph -->
+  <meta property="og:title" content="León Chamber of Commerce - Directory" />
+  <meta property="og:description" content="Discover local businesses, events, and economic opportunities in León." />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <meta property="og:url" content="https://yourdomain.com/directory.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon (1).ico" type="image/x-icon" />
+
+  <!-- Normalize and custom CSS -->
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+
+  <!-- Scripts -->
+  <script defer src="scripts/directory.js"></script>
+  <script defer src="scripts/weather.js"></script>
+  <script defer src="scripts/navigation.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-title">
+        <img src="images/building-fill.svg" alt="Timbuktu Chamber Logo" />
+        <h1>León Chamber of Commerce</h1>
+      </div>
+      <button id="ham-btn" aria-label="Menu">☰</button>
+      <nav>
+        <ul id="nav-bar" class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html" class="active">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero">
+    <img src="images/leon.webp" alt="City of Timbuktu" />
+    <button class="cta-button">Keynote Tickets</button>
+  </div>
+
+  <main>
+    <h2>Home</h2>
+
+    <section class="info-section">
+      <div class="events">
+        <h3>Events</h3>
+        <p>Local business fair - July 20</p>
+        <p>Networking Lunch - July 25</p>
+        <p>Startup Meetup - August 1</p>
+      </div>
+
+      <div class="current-weather">
+        <h3>Current Weather</h3>
+        <img src="images/cloudnsun.svg" alt="Partly Cloudy Icon" class="weather-icon">
+        <p><span id="temp">75° F</span><br>
+        Partly Cloudy<br>
+        High: 85°<br>
+        Low: 52°<br>
+        Humidity: 34%<br>
+        Sunrise: 7:30am<br>
+        Sunset: 9:59pm</p>
+      </div>
+
+      <div class="weather-forecast">
+        <h3>Weather Forecast</h3>
+        <p>Today: <strong>90°F</strong></p>
+        <p>Wednesday: <strong>89°F</strong></p>
+        <p>Thursday: <strong>68°F</strong></p>
+      </div>
+    </section>
+
+    <div id="membersContainer" class="grid-view"></div>
+  </main>
+
+  <footer>
+    <div class="contact-info">
+      <p><strong>León Chamber of Commerce</strong><br />
+      10 Rue De La Paix<br />
+      León, México 999<br />
+      leon_emprende@gmail.com<br />
+      (477) 631-0419</p>
+    </div>
+    <div class="social-icons">
+      <a href="#"><img src="images/instagram.svg" alt="Instagram" /></a>
+      <a href="#"><img src="images/twitter-x.svg" alt="Twitter" /></a>
+      <a href="#"><img src="images/youtube.svg" alt="YouTube" /></a>
+    </div>
+    <div class="footer-note">
+      <p>WDD231 Class Project<br />
+      Daniel Almeida<br />
+      &copy; <span id="year"></span> León Chamber of Commerce<br />
+      Last Modification: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
+</body>
+</html>

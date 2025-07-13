@@ -1,0 +1,65 @@
+[
+  {
+    "name": "León Tech Solutions",
+    "address": "123 Innovation Way, León",
+    "phone": "(223) 555-1001",
+    "website": "https://leontech.com",
+    "image": "leontech.png",
+    "membership": 3,
+    "tagline": "Empowering your digital future"
+  },
+  {
+    "name": "Desert Artisans Co.",
+    "address": "45 Artisan Lane",
+    "phone": "(223) 555-2345",
+    "website": "https://desertartisans.ml",
+    "image": "desertartisans.png",
+    "membership": 2,
+    "tagline": "Handmade goods with heart"
+  },
+  {
+    "name": "Savanna Consulting",
+    "address": "78 Biz Park",
+    "phone": "(223) 555-1122",
+    "website": "https://savanna.consulting",
+    "image": "savanna.png",
+    "membership": 2,
+    "tagline": "Insightful business strategy"
+  },
+  {
+    "name": "Nomad Coffee",
+    "address": "9 Coffee Street",
+    "phone": "(223) 555-4444",
+    "website": "https://nomadcoffee.ml",
+    "image": "nomadcoffee.png",
+    "membership": 1,
+    "tagline": "Fueling ideas daily"
+  },
+  {
+    "name": "Oasis Marketing",
+    "address": "33 Palm Ave",
+    "phone": "(223) 555-7777",
+    "website": "https://oasismarketing.ml",
+    "image": "oasis.png",
+    "membership": 3,
+    "tagline": "Grow your brand"
+  },
+  {
+    "name": "Sahara Logistics",
+    "address": "100 Desert Drive",
+    "phone": "(223) 555-3030",
+    "website": "https://saharalogistics.ml",
+    "image": "sahara.png",
+    "membership": 2,
+    "tagline": "Delivering solutions"
+  },
+  {
+    "name": "León Tours",
+    "address": "5 Explorer Rd",
+    "phone": "(223) 555-5050",
+    "website": "https://leontours.ml",
+    "image": "tours.png",
+    "membership": 1,
+    "tagline": "Experience the adventure"
+  }
+]

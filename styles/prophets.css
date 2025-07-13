@@ -1,0 +1,63 @@
+/* Fuentes y cuerpo */
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1rem;
+  color: #333;
+}
+
+h2 {
+  margin: 1rem 0 0.5rem;
+  text-align: center;
+  color: #222;
+  text-shadow: 0 0 10px #ccc;
+}
+
+/* Grid principal responsivo */
+.grid {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+/* Tarjeta de cada profeta */
+section {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+section:hover {
+  transform: scale(1.02);
+}
+
+/* Imagen del profeta */
+img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 0 15px #999;
+  margin-bottom: 0.75rem;
+}
+
+/* Párrafos (datos adicionales) */
+section p {
+  font-size: 0.95rem;
+  text-align: center;
+  margin: 0.25rem 0;
+  color: #444;
+}
