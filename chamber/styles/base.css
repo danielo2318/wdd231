@@ -16,14 +16,14 @@ header {
   background: #004080;
   color: white;
   padding: .1rem;
-  position: relative; /* Añadido para posicionamiento del menú */
+  position: relative; 
 }
 
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative; /* Añadido para posicionamiento del menú */
+  position: relative; 
 }
 
 .logo-title {
@@ -46,7 +46,7 @@ header {
   padding: 0.5rem;
   transition: all 0.3s ease;
   z-index: 1001;
-  display: block; /* Asegura que sea visible */
+  display: block; 
 }
 
 #ham-btn:hover {

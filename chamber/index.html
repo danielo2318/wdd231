@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>León Chamber of Commerce - Home</title>
+  <meta name="description" content="Home page for the León Chamber of Commerce. Discover events, weather updates, and spotlighted businesses." />
+  <meta name="author" content="Daniel Almeida" />
+
+  <meta property="og:title" content="León Chamber of Commerce - Home" />
+  <meta property="og:description" content="Explore León's business community, events, and local weather." />
+  <meta property="og:image" content="images/leon.webp" />
+  <meta property="og:url" content="index.html" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="images/favicon (1).ico" type="image/x-icon" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+
+  <script defer src="scripts/navigation.js"></script>
+  <script defer src="scripts/weather.js"></script>
+  <script defer src="scripts/spotlight.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-title">
+        <img src="images/building-fill.svg" alt="León Chamber Logo" />
+        <h1>León Chamber of Commerce</h1>
+      </div>
+      <button id="ham-btn" aria-label="Menu">☰</button>
+      <nav>
+        <ul id="nav-bar" class="navigation">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero">
+    <img src="images/leon.webp" alt="City of León skyline" loading="lazy" />
+    <a href="join.html" class="cta-button">Join the Chamber</a>
+  </div>
+
+  <main>
+    <section class="info-section">
+      <div class="events">
+        <h3>📅 Upcoming Events</h3>
+        <ul>
+          <li>Entrepreneur Bootcamp – <strong>July 22</strong></li>
+          <li>Business Expo – <strong>August 3</strong></li>
+          <li>Chamber Breakfast – <strong>August 10</strong></li>
+        </ul>
+      </div>
+
+      <div class="weather">
+        <h3>🌤️ Current Weather</h3>
+        <div class="current-weather">
+          <img id="weather-icon" src="" alt="" loading="lazy" />
+          <p><span id="temp">--°C</span></p>
+          <p id="description">--</p>
+          <p><strong>Humidity:</strong> <span id="humidity">--</span>%</p>
+          <p><strong>Wind:</strong> <span id="wind">--</span> km/h</p>
+        </div>
+        <h4>🔮 3-Day Forecast</h4>
+        <div id="forecast-container">
+          <div id="forecast1">Loading...</div>
+          <div id="forecast2">Loading...</div>
+          <div id="forecast3">Loading...</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="spotlights">
+      <h2>✨ Member Spotlights</h2>
+      <div id="spotlight-container" class="grid-view">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact-info">
+      <p><strong>León Chamber of Commerce</strong><br />
+      10 Rue De La Paix<br />
+      León, México 999<br />
+      leon_emprende@gmail.com<br />
+      (477) 631-0419</p>
+    </div>
+    </div>
+    <div class="social-icons">
+      <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="" /></a>
+      <a href="#" aria-label="Twitter"><img src="images/twitter-x.svg" alt="" /></a>
+      <a href="#" aria-label="YouTube"><img src="images/youtube.svg" alt="" /></a>
+    </div>
+    <div class="footer-note">
+      <p>WDD231 Class Project<br />
+        Daniel Almeida<br />
+        &copy; <span id="year"></span> León | Chamber of Commerce<br />
+        Last Modification: <span id="lastModified"></span>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
+</body>
+</html>

@@ -4,7 +4,7 @@
     "address": "123 Innovation Way, León",
     "phone": "(223) 555-1001",
     "website": "https://leontech.com",
-    "image": "leontech.png",
+    "image": "guanajuato.webp",
     "membership": 3,
     "tagline": "Empowering your digital future"
   },
@@ -13,7 +13,7 @@
     "address": "45 Artisan Lane",
     "phone": "(223) 555-2345",
     "website": "https://desertartisans.ml",
-    "image": "desertartisans.png",
+    "image": "guanajuato.webp",
     "membership": 2,
     "tagline": "Handmade goods with heart"
   },
@@ -22,7 +22,7 @@
     "address": "78 Biz Park",
     "phone": "(223) 555-1122",
     "website": "https://savanna.consulting",
-    "image": "savanna.png",
+    "image": "guanajuato.webp",
     "membership": 2,
     "tagline": "Insightful business strategy"
   },
@@ -31,7 +31,7 @@
     "address": "9 Coffee Street",
     "phone": "(223) 555-4444",
     "website": "https://nomadcoffee.ml",
-    "image": "nomadcoffee.png",
+    "image": "guanajuato.webp",
     "membership": 1,
     "tagline": "Fueling ideas daily"
   },
@@ -40,7 +40,7 @@
     "address": "33 Palm Ave",
     "phone": "(223) 555-7777",
     "website": "https://oasismarketing.ml",
-    "image": "oasis.png",
+    "image": "guanajuato.webp",
     "membership": 3,
     "tagline": "Grow your brand"
   },
@@ -49,7 +49,7 @@
     "address": "100 Desert Drive",
     "phone": "(223) 555-3030",
     "website": "https://saharalogistics.ml",
-    "image": "sahara.png",
+    "image": "guanajuato.webp",
     "membership": 2,
     "tagline": "Delivering solutions"
   },
@@ -58,7 +58,7 @@
     "address": "5 Explorer Rd",
     "phone": "(223) 555-5050",
     "website": "https://leontours.ml",
-    "image": "tours.png",
+    "image": "guanajuato.webp",
     "membership": 1,
     "tagline": "Experience the adventure"
   }
