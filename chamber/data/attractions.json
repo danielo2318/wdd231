@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Arco de la Calzada",
+    "address": "Blvd. Adolfo López Mateos, León, Gto.",
+    "description": "Iconic archway that serves as the symbol of León, built in 1893 to commemorate the city's industrial progress.",
+    "image": "arcodelacalzada.webp"
+  },
+  {
+    "name": "Explanada del Estadio León",
+    "address": "Blvd. Adolfo López Mateos 1801, León, Gto.",
+    "description": "Vibrant public space outside the León soccer stadium with food vendors and entertainment.",
+    "image": "estadioleon.webp"
+  },
+  {
+    "name": "Museo de Arte e Historia de Guanajuato",
+    "address": "Prol. Calzada de los Héroes 908, León, Gto.",
+    "description": "Premier cultural center showcasing regional art and history through interactive exhibits.",
+    "image": "museodearteehistoria.webp"
+  },
+  {
+    "name": "Zona Piel (Leather District)",
+    "address": "Centro Histórico, León, Gto.",
+    "description": "World-famous district specializing in leather goods with hundreds of shops and factories.",
+    "image": "zonapiel.webp"
+  },
+  {
+    "name": "Plaza Principal (Main Square)",
+    "address": "Centro Histórico, León, Gto.",
+    "description": "The heart of León with beautiful gardens, the Cathedral Basilica, and frequent cultural events.",
+    "image": "plazaprincipal.webp"
+  },
+  {
+    "name": "Zoológico de León",
+    "address": "Blvd. Francisco Villa 1000, León, Gto.",
+    "description": "Modern zoo with over 1,200 animals from 180 species in naturalistic habitats.",
+    "image": "zoologico.webp"
+  },
+  {
+    "name": "Parque Metropolitano",
+    "address": "Blvd. Francisco Villa 1000, León, Gto.",
+    "description": "Massive urban park with lakes, bike paths, playgrounds, and recreational facilities.",
+    "image": "metropolitano.webp"
+  },
+  {
+    "name": "Plaza del Zapato",
+    "address": "Blvd. Aeropuerto 1501, León, Gto.",
+    "description": "Specialized shopping center dedicated to footwear with hundreds of shoe stores and factories.",
+    "image": "plazadelzapato.webp"
+  }
+]

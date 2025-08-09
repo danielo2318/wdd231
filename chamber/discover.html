@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover León | León Chamber of Commerce</title>
+  <meta name="description" content="Discover the best attractions, businesses, and cultural sites in León, Guanajuato">
+  <meta name="author" content="Daniel Almeida">
+
+  <meta property="og:title" content="Discover León | León Chamber of Commerce" />
+  <meta property="og:description" content="Explore the best of León including attractions, businesses and cultural sites" />
+  <meta property="og:image" content="images/leon-discover.webp" />
+  <meta property="og:url" content="discover.html" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="images/favicon (1).ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/discover.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/discover.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-title">
+        <img src="images/building-fill.svg" alt="León Chamber Logo" />
+        <h1>León Chamber of Commerce</h1>
+      </div>
+      <button id="ham-btn" aria-label="Menu">☰</button>
+      <nav>
+        <ul id="nav-bar" class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html" class="active">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero">
+    <img src="images/leon.webp" alt="Panoramic view of León" loading="lazy" />
+    <h2 class="hero-title">Discover León</h2>
+  </div>
+
+  <main class="discover-main">
+    <div class="sidebar">
+      <section class="demographics">
+        <h2>León at a Glance</h2>
+        <div class="demographic-item">
+          <h3>Population</h3>
+          <p>1.5 million (metro area)</p>
+        </div>
+        <div class="demographic-item">
+          <h3>Founded</h3>
+          <p>1576</p>
+        </div>
+        <div class="demographic-item">
+          <h3>Elevation</h3>
+          <p>1,815 meters (5,955 ft)</p>
+        </div>
+        <div class="demographic-item">
+          <h3>Known For</h3>
+          <p>Leather goods, footwear industry</p>
+        </div>
+      </section>
+
+      <section class="visitor-info">
+        <h2>Visitor Information</h2>
+        <div id="visit-message"></div>
+        <p>Average days between visits: <span id="visit-count">0</span></p>
+      </section>
+    </div>
+
+    <section class="attractions">
+      <h2>Featured Attractions</h2>
+      <div class="attractions-grid" id="attractions-container">
+        <!-- Attractions will be loaded from JSON -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact-info">
+      <p><strong>León Chamber of Commerce</strong><br>
+      10 Rue De La Paix<br>
+      León, México 999<br>
+      leon_emprende@gmail.com<br>
+      (477) 631-0419</p>
+    </div>
+    <div class="social-icons">
+      <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram"></a>
+      <a href="#" aria-label="Twitter"><img src="images/twitter-x.svg" alt="Twitter"></a>
+      <a href="#" aria-label="YouTube"><img src="images/youtube.svg" alt="YouTube"></a>
+    </div>
+    <div class="footer-note">
+      <p>WDD231 Class Project<br>
+      Daniel Almeida<br>
+      &copy; <span id="year"></span> León | Chamber of Commerce<br>
+      Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
+</body>
+</html>
