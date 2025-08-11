@@ -1,0 +1,42 @@
+@media (min-width: 768px) {
+  .info-section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  #ham-btn {
+    display: none;
+  }
+
+  .navigation {
+    position: static;
+    flex-direction: row;
+    background: none;
+    box-shadow: none;
+  }
+
+  .hero .btn {
+    bottom: 3rem;
+    right: 3rem;
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (min-width:600px){
+   footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .footer-note, .contact-info, .social-icons {
+    flex: 1fr 1fr 200px;
+  }
+}

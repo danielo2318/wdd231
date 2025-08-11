@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEPETL Trail Club | Events & Training</title>
+  <meta name="description" content="Upcoming trail runs and training resources">
+  <meta name="author" content="Your Name">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-title">
+        <img src="images/logo.svg" alt="TEPETL Trail Club Logo" width="50">
+        <h1>TEPETL Trail Club</h1>
+      </div>
+      <button id="ham-btn" aria-label="Menu">☰</button>
+      <nav>
+        <ul id="nav-bar" class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html" class="active">Events & Training</a></li>
+          <li><a href="join.html">Join Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="events-main">
+    <section class="schedule">
+      <h2>📅 Weekly Run Schedule</h2>
+      <table id="run-schedule">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Route</th>
+            <th>Level</th>
+            <th>Distance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Filled by JavaScript -->
+        </tbody>
+      </table>
+    </section>
+
+    <section class="training-tips">
+      <h2>🏋️ Training Resources</h2>
+      <div class="tip-cards">
+        <div class="tip-card">
+          <h3>Pre-Run Warmup</h3>
+          <ol>
+            <li>5 minutes dynamic stretching</li>
+            <li>Leg swings (10 each side)</li>
+            <li>High knees (30 seconds)</li>
+            <li>Butt kicks (30 seconds)</li>
+          </ol>
+        </div>
+        <div class="tip-card">
+          <h3>Essential Gear</h3>
+          <ul>
+            <li>Trail running shoes</li>
+            <li>Hydration pack</li>
+            <li>Moisture-wicking clothing</li>
+            <li>GPS watch or phone</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact-info">
+      <p><strong>TEPETL Trail Club</strong><br>
+      10 Mountain Trail<br>
+      León, México 999<br>
+      info@tepetl.run<br>
+      (477) 631-0419</p>
+    </div>
+        <div class="social-icons">
+      <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="" /></a>
+      <a href="#" aria-label="Twitter"><img src="images/twitter-x.svg" alt="" /></a>
+      <a href="#" aria-label="YouTube"><img src="images/youtube.svg" alt="" /></a>
+    </div>
+    <div class="footer-note">
+      <p>&copy; <span id="year"></span> TEPETL Trail Club<br>
+      Last Modified: <span id="lastModified"></span><br>
+      <a href="attributions.html">Attributions</a></p>
+    </div>
+  </footer>
+
+
+  <script src="scripts/navigation.js"></script>
+  <script src="scripts/events.js"></script>
+</body>
+</html>
