@@ -1,0 +1,6 @@
+<svg width="300" height="200" viewBox="0 0 190 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Símbolo abstracto (movimiento/velocidad) -->
+  <path d="M80 100L120 60L160 100L200 60" stroke="#FFff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M100 120L140 80L180 120" stroke="#FFf" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+
+</svg>

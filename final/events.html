@@ -5,8 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TEPETL Trail Club | Events & Training</title>
   <meta name="description" content="Upcoming trail runs and training resources">
-  <meta name="author" content="Your Name">
-  <link rel="icon" href="images/favicon.ico">
+  <meta name="author" content="TEPETL Trail Club">
+  <meta property="og:title" content="TEPETL Trail Club">
+  <meta property="og:description" content="Mountain running community in León, Mexico">
+  <meta property="og:image" content="images/trail.webp">
+  <meta property="og:url" content="https://tepetl.run">
+  <link rel="icon" href="images/tepetl2.svg" />
+    <link rel="apple-touch-icon" href="images/tepetl2.svg" />
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/larger.css">
@@ -16,7 +21,7 @@
   <header>
     <div class="header-container">
       <div class="logo-title">
-        <img src="images/logo.svg" alt="TEPETL Trail Club Logo" width="50">
+        <img src="images/tepetl.svg" alt="TEPETL Trail Club Logo" width="100">
         <h1>TEPETL Trail Club</h1>
       </div>
       <button id="ham-btn" aria-label="Menu">☰</button>
@@ -30,24 +35,23 @@
     </div>
   </header>
 
-  <main class="events-main">
-    <section class="schedule">
-      <h2>📅 Weekly Run Schedule</h2>
-      <table id="run-schedule">
-        <thead>
-          <tr>
-            <th>Day</th>
-            <th>Time</th>
-            <th>Route</th>
-            <th>Level</th>
-            <th>Distance</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Filled by JavaScript -->
-        </tbody>
-      </table>
-    </section>
+<section class="schedule">
+  <h2>📅 Weekly Run Schedule</h2>
+  <table id="run-schedule">
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>Time</th>
+        <th>Route</th>
+        <th>Level</th>
+        <th>Distance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Filled by JavaScript -->
+    </tbody>
+  </table>
+</section>
 
     <section class="training-tips">
       <h2>🏋️ Training Resources</h2>
@@ -82,10 +86,10 @@
       info@tepetl.run<br>
       (477) 631-0419</p>
     </div>
-        <div class="social-icons">
-      <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="" /></a>
-      <a href="#" aria-label="Twitter"><img src="images/twitter-x.svg" alt="" /></a>
-      <a href="#" aria-label="YouTube"><img src="images/youtube.svg" alt="" /></a>
+    <div class="social-icons">
+      <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram"></a>
+      <a href="#" aria-label="Twitter"><img src="images/twitter-x.svg" alt="Twitter"></a>
+      <a href="#" aria-label="YouTube"><img src="images/youtube.svg" alt="YouTube"></a>
     </div>
     <div class="footer-note">
       <p>&copy; <span id="year"></span> TEPETL Trail Club<br>
@@ -94,8 +98,11 @@
     </div>
   </footer>
 
-
   <script src="scripts/navigation.js"></script>
   <script src="scripts/events.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
 </body>
 </html>

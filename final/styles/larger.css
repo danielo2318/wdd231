@@ -28,15 +28,18 @@
   }
 }
 
-@media screen and (min-width:600px){
-   footer {
+@media screen and (min-width: 600px) {
+  footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: left;
+    gap: 1rem;
+    padding: 1rem 2rem;
   }
 
   .footer-note, .contact-info, .social-icons {
-    flex: 1fr 1fr 200px;
+    flex: 1 1 200px;
+    margin-bottom: 1rem;
   }
 }

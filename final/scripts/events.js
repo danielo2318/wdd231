@@ -27,52 +27,56 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       if (runScheduleTable) {
-        runScheduleTable.innerHTML = `<tr><td colspan="5">Schedule unavailable</td></tr>`;
+        runScheduleTable.querySelector(
+          "tbody"
+        ).innerHTML = `<tr><td colspan="5">Schedule unavailable</td></tr>`;
       }
     }
   }
 
   function displayUpcomingEvents(events) {
-    // Sort events by date and get the next 3
     const now = new Date();
     const upcoming = events
-      .filter((event) => new Date(event.date) > now)
+      .filter((event) => new Date(event.date) > now && event.type === "event")
       .sort((a, b) => new Date(a.date) - new Date(b.date))
       .slice(0, 3);
 
     upcomingEventsList.innerHTML = upcoming
       .map(
         (event) => `
-      <li>
-        <strong>${event.name}</strong> - 
-        ${new Date(event.date).toLocaleDateString("en-US", {
-          month: "short",
-          day: "numeric",
-          hour: "2-digit",
-          minute: "2-digit",
-        })}
-      </li>
-    `
+        <li>
+          <strong>${event.name}</strong> - 
+          ${new Date(event.date).toLocaleDateString("en-US", {
+            month: "short",
+            day: "numeric",
+            hour: "2-digit",
+            minute: "2-digit",
+          })}
+        </li>
+      `
       )
       .join("");
+
+    if (upcoming.length === 0) {
+      upcomingEventsList.innerHTML = "<li>No upcoming events.</li>";
+    }
   }
 
   function displayRunSchedule(events) {
-    // Weekly runs (non-special events)
     const weeklyRuns = events.filter((event) => event.type === "weekly");
-
     const tbody = runScheduleTable.querySelector("tbody");
+
     tbody.innerHTML = weeklyRuns
       .map(
         (run) => `
-      <tr>
-        <td>${run.day}</td>
-        <td>${run.time}</td>
-        <td>${run.route}</td>
-        <td>${run.level}</td>
-        <td>${run.distance}</td>
-      </tr>
-    `
+        <tr>
+          <td data-label="Day">${run.day}</td>
+          <td data-label="Time">${run.time}</td>
+          <td data-label="Route">${run.route}</td>
+          <td data-label="Level">${run.level}</td>
+          <td data-label="Distance">${run.distance}</td>
+        </tr>
+      `
       )
       .join("");
   }

@@ -5,8 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Join TEPETL Trail Club</title>
   <meta name="description" content="Become a member of our trail running community">
-  <meta name="author" content="Your Name">
-  <link rel="icon" href="images/favicon.ico">
+  <meta name="author" content="TEPETL Trail Club">
+  <meta property="og:title" content="TEPETL Trail Club">
+  <meta property="og:description" content="Mountain running community in León, Mexico">
+  <meta property="og:image" content="images/trail.webp">
+  <meta property="og:url" content="https://tepetl.run">
+  <link rel="icon" href="images/tepetl2.svg" />
+    <link rel="apple-touch-icon" href="images/tepetl2.svg" />
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/larger.css">
@@ -17,7 +22,7 @@
   <header>
     <div class="header-container">
       <div class="logo-title">
-        <img src="images/logo.svg" alt="TEPETL Trail Club Logo" width="50">
+        <img src="images/tepetl.svg" alt="TEPETL Trail Club Logo" width="100">
         <h1>TEPETL Trail Club</h1>
       </div>
       <button id="ham-btn" aria-label="Menu">☰</button>
@@ -120,7 +125,7 @@
     </section>
   </main>
 
- <footer>
+  <footer>
     <div class="contact-info">
       <p><strong>TEPETL Trail Club</strong><br>
       10 Mountain Trail<br>
@@ -128,10 +133,10 @@
       info@tepetl.run<br>
       (477) 631-0419</p>
     </div>
-        <div class="social-icons">
-      <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="" /></a>
-      <a href="#" aria-label="Twitter"><img src="images/twitter-x.svg" alt="" /></a>
-      <a href="#" aria-label="YouTube"><img src="images/youtube.svg" alt="" /></a>
+    <div class="social-icons">
+      <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram"></a>
+      <a href="#" aria-label="Twitter"><img src="images/twitter-x.svg" alt="Twitter"></a>
+      <a href="#" aria-label="YouTube"><img src="images/youtube.svg" alt="YouTube"></a>
     </div>
     <div class="footer-note">
       <p>&copy; <span id="year"></span> TEPETL Trail Club<br>
@@ -140,8 +145,12 @@
     </div>
   </footer>
 
-
   <script src="scripts/navigation.js"></script>
   <script src="scripts/join.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+    document.getElementById("timestamp").value = new Date().toISOString();
+  </script>
 </body>
 </html>

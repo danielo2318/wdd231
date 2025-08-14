@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You - León Chamber of Commerce</title>
+  <meta name="description" content="Confirmation page for membership application">
+  <meta name="author" content="TEPETL Trail Club">
+  <meta property="og:title" content="TEPETL Trail Club">
+  <meta property="og:description" content="Mountain running community in León, Mexico">
+  <meta property="og:image" content="images/trail.webp">
+  <meta property="og:url" content="https://tepetl.run">
+  <link rel="icon" href="images/tepetl2.svg" />
+    <link rel="apple-touch-icon" href="images/tepetl2.svg" />
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+  <header>
+     <div class="header-container">
+      <div class="logo-title">
+        <img src="images/tepetl.svg" alt="TEPETL Trail Club Logo" width="100" height="100">
+        <h1>TEPETL Trail Club</h1>
+      </div>
+      <button id="ham-btn" aria-label="Menu">☰</button>
+      <nav>
+        <ul id="nav-bar" class="navigation">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="events.html">Events & Training</a></li>
+          <li><a href="join.html">Join Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <p>Your membership application has been submitted successfully. Here are the details we received:</p>
+      <ul id="submitted-data"></ul>
+    </section>
+  </main>
+
+ <footer>
+    <div class="contact-info">
+      <p><strong>TEPETL Trail Club</strong><br>
+      10 Mountain Trail<br>
+      León, México 999<br>
+      info@tepetl.run<br>
+      (477) 631-0419</p>
+    </div>
+    <div class="social-icons">
+      <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram"></a>
+      <a href="#" aria-label="Twitter"><img src="images/twitter-x.svg" alt="Twitter"></a>
+      <a href="#" aria-label="YouTube"><img src="images/youtube.svg" alt="YouTube"></a>
+    </div>
+    <div class="footer-note">
+      <p>&copy; <span id="year"></span> TEPETL Trail Club<br>
+      Last Modified: <span id="lastModified"></span><br>
+      <a href="attributions.html">Attributions</a></p>
+    </div>
+  </footer>
+
+  <script src="scripts/thankyou.js"></script>
+</body>
+</html>

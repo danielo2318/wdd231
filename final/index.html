@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TEPETL Trail Club | Home</title>
   <meta name="description" content="Join our trail running community in León, Mexico">
-  <meta name="author" content="Your Name">
+  <meta name="author" content="TEPETL Trail Club">
   <meta property="og:title" content="TEPETL Trail Club">
   <meta property="og:description" content="Mountain running community in León, Mexico">
-  <meta property="og:image" content="images/trail-hero.webp">
-  <meta property="og:url" content="https://yourdomain.com">
-  <link rel="icon" href="images/favicon.ico">
+  <meta property="og:image" content="images/trail.webp">
+  <meta property="og:url" content="https://tepetl.run">
+  <link rel="icon" href="images/tepetl2.svg" />
+    <link rel="apple-touch-icon" href="images/tepetl2.svg" />
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/larger.css">
@@ -20,7 +21,7 @@
   <header>
     <div class="header-container">
       <div class="logo-title">
-        <img src="images/tepetl.svg" alt="TEPETL Trail Club Logo" width="100">
+        <img src="images/tepetl.svg" alt="TEPETL Trail Club Logo" width="100" height="100">
         <h1>TEPETL Trail Club</h1>
       </div>
       <button id="ham-btn" aria-label="Menu">☰</button>
@@ -49,15 +50,41 @@
       </div>
 
       <div class="weather">
-        <h3>🌤️ Trail Conditions</h3>
+        <h3>🌤️ Current Weather</h3>
         <div class="current-weather">
-          <img id="weather-icon" src="" alt="" loading="lazy">
+          <img id="weather-icon" src="" alt="" loading="lazy" />
           <p><span id="temp">--°C</span></p>
           <p id="description">--</p>
+          <p><strong>Humidity:</strong> <span id="humidity">--</span>%</p>
           <p><strong>Wind:</strong> <span id="wind">--</span> km/h</p>
+        </div>
+        <h4>🔮 3-Day Forecast</h4>
+        <div id="forecast-container">
+          <div id="forecast1">Loading...</div>
+          <div id="forecast2">Loading...</div>
+          <div id="forecast3">Loading...</div>
         </div>
       </div>
     </section>
+
+  <dialog id="trail-dialog" aria-modal="true" aria-labelledby="dialog-title" aria-describedby="dialog-desc">
+  <form method="dialog" class="modal-form">
+    <h2 id="dialog-title"></h2>
+    <p id="dialog-desc"></p>
+
+    <p><strong>Distance:</strong> <span id="dialog-distance"></span></p>
+    <p><strong>Elevation:</strong> <span id="dialog-elevation"></span></p>
+    <p><strong>Difficulty:</strong> <span id="dialog-difficulty"></span></p>
+    <p><strong>Terrain:</strong> <span id="dialog-terrain"></span></p>
+    <p><strong>Location:</strong> <span id="dialog-location"></span></p>
+    <p><strong>Features:</strong> <span id="dialog-features"></span></p>
+
+    <button id="favorite-btn" type="button" aria-pressed="false">Add to Favorites ⭐</button>
+    <menu>
+      <button id="close-dialog" type="submit">Close</button>
+    </menu>
+  </form>
+</dialog>
 
     <section class="featured">
       <h2>✨ Featured Trails</h2>
@@ -65,6 +92,7 @@
         <!-- Filled by JavaScript -->
       </div>
     </section>
+
   </main>
 
   <footer>
@@ -75,10 +103,10 @@
       info@tepetl.run<br>
       (477) 631-0419</p>
     </div>
-        <div class="social-icons">
-      <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="" /></a>
-      <a href="#" aria-label="Twitter"><img src="images/twitter-x.svg" alt="" /></a>
-      <a href="#" aria-label="YouTube"><img src="images/youtube.svg" alt="" /></a>
+    <div class="social-icons">
+      <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram"></a>
+      <a href="#" aria-label="Twitter"><img src="images/twitter-x.svg" alt="Twitter"></a>
+      <a href="#" aria-label="YouTube"><img src="images/youtube.svg" alt="YouTube"></a>
     </div>
     <div class="footer-note">
       <p>&copy; <span id="year"></span> TEPETL Trail Club<br>
@@ -95,5 +123,6 @@
     document.getElementById("year").textContent = new Date().getFullYear();
     document.getElementById("lastModified").textContent = document.lastModified;
   </script>
+  <script type="module" src="scripts/main.js"></script>
 </body>
 </html>

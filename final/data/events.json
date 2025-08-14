@@ -3,7 +3,7 @@
     "id": "e1",
     "name": "Sunrise 10K",
     "type": "event",
-    "date": "2023-07-22T06:30:00",
+    "date": "2025-08-22T06:30:00",
     "location": "Cerro del Cubilete",
     "description": "Early morning run to watch sunrise from the summit"
   },
@@ -11,7 +11,7 @@
     "id": "e2",
     "name": "Trail Beginners Workshop",
     "type": "event",
-    "date": "2023-08-03T19:00:00",
+    "date": "2025-08-19T19:00:00",
     "location": "Parque Metropolitano",
     "description": "Learn trail running basics with our coaches"
   },
@@ -19,7 +19,7 @@
     "id": "e3",
     "name": "Mountain Marathon Prep",
     "type": "event",
-    "date": "2023-08-10T06:00:00",
+    "date": "2025-08-25T06:00:00",
     "location": "Sierra de Lobos",
     "description": "Long run for marathon training"
   },
